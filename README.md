@@ -1,2 +1,2 @@
 # ImageHoverEffect
- Gallery Image  with Image Hover effect (No JS)
+ Gallery Image  with Image Hover effect
