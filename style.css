@@ -1,0 +1,95 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(white -70%, lightblue, purple 170%);
+  min-height: 100vh;
+}
+p {
+  color: white;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  height: 450px;
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+.heading {
+  text-align: right;
+  margin: 0 20px;
+}
+.close {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 2rem;
+  text-align: center;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F48FB1;
+  color: white;
+  border: none;
+  box-shadow: 0 0 2px #222,
+              -1px 1px 4px #222,
+              -2px 1px 6px #222;
+  z-index: 20;
+  text-transform: uppercase;
+  transistion: box-shadow .3s ease;
+}
+.close:hover,
+.close:focus {
+  box-shadow: 0 0 0 transparent;
+  outline: none;
+}
+.gallery-list{
+  flex:1;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: width .3s ease;
+}
+.gallery-item {
+  height: 250px;
+  flex:1;
+  position: relative;
+  box-shadow: 0 0 2px #222,
+              0 1px 5px #222,
+              0 1px 12px #222;
+  transition: flex .3s ease, height .3s ease .3s;
+}
+.gallery-item:hover {
+  flex: 3;
+  z-index: 10;
+}
+.gallery-item:nth-of-type(1) {
+  background: url(https://images.unsplash.com/photo-1515809695236-d7d2aea71def?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b8004fece5af1919e52ca8ee0f4908d3) center no-repeat;
+  background-size: cover;
+}
+.gallery-item:nth-of-type(2n) {
+  background: url(https://images.unsplash.com/photo-1510202677267-b2e060f6c846?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=ed2dcd3576caafa9a03642d5b2432fa1) center no-repeat;
+  background-size: cover;
+}
+.gallery-item:nth-of-type(3) {
+  background: url(https://images.unsplash.com/photo-1488034976201-ffbaa99cbf5c?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=ef0ca3c29a4c5b73a0c85138236c974f) center no-repeat;
+  background-size: cover;
+}
+.full-page {
+  flex: 7;
+}
+.shrink {
+  flex: 0;
+}
